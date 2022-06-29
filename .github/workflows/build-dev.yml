@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - develop
-      - feature/CIDev
   pull_request:
     branches:
       - develop
-      - feature/CIDev
 
 jobs:
   build:
