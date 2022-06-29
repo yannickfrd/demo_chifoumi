@@ -55,3 +55,6 @@ jobs:
           npm install --force
       - name: "build npm"
         run: npm run build
+
+      - name: "run tests"
+        run: php bin/phpunit
