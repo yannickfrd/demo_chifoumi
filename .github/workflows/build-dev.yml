@@ -2,13 +2,9 @@ name: Build dev
 
 on:
   push:
-    branches:
-      - develop
-      - CIDev
+    branches: [ "develop", "CIDev" ]
   pull_request:
-    branches:
-      - develop
-      - CIDev
+    branches: [ "develop", "CIDev" ]
 
 jobs:
   build:
