@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: [ubuntu-latest]
-        php-versions: ['8.0']
+        php-versions: ['8.1']
 
     steps:
       - name: "Checkout"
@@ -35,8 +35,8 @@ jobs:
         env:
           runner: ${{ matrix.operating-system }}
 
-      - name: "Validate composer.json and composer.lock"
-        run: composer validate
+#      - name: "Validate composer.json and composer.lock"
+#        run: composer validate
 
       - name: Get composer cache directory
         id: composer-cache
