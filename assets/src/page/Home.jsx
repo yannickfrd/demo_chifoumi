@@ -5,7 +5,7 @@ const Home = () => {
     const container = document.getElementById('test');
     const root = createRoot(container);
     root.render(
-        <h1>Bonjour, monde !</h1>
+        <p>okok</p>
     );
 }
 
